@@ -16,8 +16,11 @@ cfg = load_config(join(app.root_path, '../shared/config.yml'))
 def show_tags():
     g.setdefault('image', cfg['awesome_image']) # Flask.g: a way to pass var to a template
     #embed()
+
     # Note tags=Tag.all() ... another way to pass var to a Jinja2 template
     return render_template('index.html', tags=Tag.all())
+
+
 
 @app.route('/tags', methods=['POST'])
 def add_tag():
