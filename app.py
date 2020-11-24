@@ -32,3 +32,4 @@ def add_tag():
         tag = Tag.create(name=new_tag)
 
     return redirect('/')
+ 
