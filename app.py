@@ -35,10 +35,6 @@ def show_tags():
     return render_template('index.html', tags=Tag.all())
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> df3c7b17966b77e4494e80ea1f279a28bb904895
 @app.route('/tags', methods=['POST'])
 def add_tag():
     new_tag = request.form['tag-name']
